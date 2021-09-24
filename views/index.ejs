@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Budgtr</title>
+  </head>
+  <body>
+    <h1>Budgtr</h1>
+
+    <table>
+      <% allBudgets.forEach((budget, idx) =>{ %>
+      <tr>
+        <td><%= budget.date %></td>
+        <td>
+          <a href="/budgets/<%= `${idx}` %>"><%= budget.name %></a>
+        </td>
+        <td><%= budget.amount %></td>
+      </tr>
+
+      <% }) %>
+    </table>
+  </body>
+</html>
