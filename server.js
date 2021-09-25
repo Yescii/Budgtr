@@ -10,7 +10,7 @@ app.get("/budgets", (req, res) => {
 });
 
 app.get("/budgets/:idxBudget", (req, res) => {
-  res.render("show.ejs", { budget: req.params.idxBudget });
+  res.render("show.ejs", { budget: budgets[req.params.idxBudget] });
 });
 
 app.listen(port, () => {

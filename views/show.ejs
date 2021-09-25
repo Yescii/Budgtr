@@ -7,7 +7,84 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Retirement</h1>
-    <input type="button " name="Button" id="" />
+    <style>
+      body {
+        text-align: left;
+        margin-left: 2rem;
+      }
+      .con {
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        margin-bottom: 1rem;
+      }
+
+      li {
+        list-style-type: none;
+        font-weight: 400;
+        margin: 0;
+      }
+      .bold {
+        font-weight: 800;
+      }
+      button {
+        cursor: pointer;
+        text-align: center;
+        padding: 0.5rem;
+        border: 1px solid black;
+        border-radius: 0.5rem;
+        width: 3.8rem;
+        color: black;
+      }
+    </style>
+    <div class="con">
+      <h1><%= budget.name %></h1>
+
+      <form method="get" action="/budgets">
+        <button type="submit">BACK</button>
+      </form>
+
+      <ul>
+        <li class="bold">
+          date
+          <ul>
+            <li><%= budget.date %></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li class="bold">
+          name
+          <ul>
+            <li><%= budget.name %></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li class="bold">
+          from
+          <ul>
+            <li><%= budget.from %></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li class="bold">
+          amount
+          <ul>
+            <li><%= budget.amount %></li>
+          </ul>
+        </li>
+      </ul>
+      <ul>
+        <li class="bold">
+          tags
+          <ul>
+            <li><%= budget.tags %></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
