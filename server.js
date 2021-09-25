@@ -21,7 +21,7 @@ app.get("/budgets", (req, res) => {
   res.render("index.ejs", { allBudgets: budgets });
 });
 
-//route to create a new budget
+//NEW route to create a new budget
 app.get("/budgets/new", (req, res) => {
   res.render("new.ejs");
 });
