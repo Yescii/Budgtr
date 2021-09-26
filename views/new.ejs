@@ -4,11 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
+    <style>
+      body {
+        font-family: "Varela Round", sans-serif;
+      }
+    </style>
     <div>
-      <form action="/budgets/?_method=PUT" method="POST">
+      <form action="/budgets" method="POST">
         date: <input type="text" name="date" placeholder="Date" /> name:
         <input type="text" name="name" placeholder="Name" /><br />
         from: <input type="text" name="from" placeholder="From" /> amount:
